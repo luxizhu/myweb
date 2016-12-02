@@ -1,0 +1,18 @@
+body{
+    padding:50px;
+    margin: 0px auto;
+    width:1000px;
+}
+
+#top{
+
+}
+
+#content{
+    min-height:500px;
+}
+
+#footer{
+    width:100%;
+    text-align: center;
+}
