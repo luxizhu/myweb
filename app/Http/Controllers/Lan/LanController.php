@@ -22,8 +22,8 @@ class LanController extends Controller
     }
 
     public function show($id){
-        $people = People::find($id);
-        return view('main.detail',compact('people'));
+        return $id;
+//        return view('main.detail',compact('id'));
     }
     public function edit($id){
         echo 'edit';
