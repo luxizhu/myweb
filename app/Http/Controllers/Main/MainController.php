@@ -38,7 +38,7 @@ class MainController extends Controller
                 case "know":
                     return redirect()->action("Know\KnowController@index");
                 case "use":
-                    return redirect()->action("Use\UseController@index");
+                    return redirect()->action("MyUse\MyUseController@index");
                 default:
                     return "";
 
