@@ -22,8 +22,16 @@ class LanController extends Controller
     }
 
     public function show($id){
-        return $id;
-//        return view('main.detail',compact('id'));
+        if(!is_null($id)){
+            switch($id){
+                case "varLearn":
+                    return view("lan.varLearn");
+                default:
+                    return $id;
+            }
+        }else{
+            return "error";
+        }
     }
     public function edit($id){
         echo 'edit';
