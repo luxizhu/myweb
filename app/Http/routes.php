@@ -14,8 +14,8 @@
 Route::get('/', function () {
     return view('home');
 });
-Route::get('people/list','Main\MainController@getList');
-Route::resource('people','Main\MainController');
+//Route::get('people/list','Main\MainController@getList');
+Route::resource('main','Main\MainController');
 
 Route::resource('lan','Lan\LanController');
 
