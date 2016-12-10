@@ -17,8 +17,7 @@ class MainController extends Controller
     }
 
     public function index(){
-        $peoples = People::all();
-        return view('main.main',compact('peoples'));
+        return view('main.main');
     }
 
     public function create(){
