@@ -16,10 +16,10 @@
         </div>
         <div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">备用</a></li>
-                <li><a href="#">备用</a></li>
-                <li><a href="#">备用</a></li>
-                <li><a href="#">备用</a></li>
+                <li class="active"><a href="#">编程语言</a></li>
+                <li><a href="#">读书笔记</a></li>
+                <li><a href="#">我的百科</a></li>
+                <li><a href="#">实践应用</a></li>
             </ul>
         </div>
     </div>
