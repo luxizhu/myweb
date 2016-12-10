@@ -17,7 +17,7 @@ Route::get('/', function () {
 Route::get('people/list','Main\MainController@getList');
 Route::resource('people','Main\MainController');
 
-Route::resource('main','Main\MainController');
+Route::resource('lan','Lan\LanController');
 
 /*
 |--------------------------------------------------------------------------
