@@ -18,6 +18,9 @@ Route::get('/', function () {
 Route::resource('main','Main\MainController');
 
 Route::resource('lan','Lan\LanController');
+Route::resource('know','Know\KnowController');
+Route::resource('read','Read\ReadController');
+Route::resource('lan','MyUse\MyUseController');
 
 /*
 |--------------------------------------------------------------------------
