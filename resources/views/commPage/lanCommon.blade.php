@@ -15,9 +15,6 @@
                     <li><a href="#">JS</a></li>
                 </ul>
             </li>
-            <li id="nowTab" class="active">
-
-            </li>
         </ul>
     </div>
     <div class="pull-left" style="width:80%;">
