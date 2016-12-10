@@ -26,7 +26,9 @@
         </div>
     </div>
 </nav>
-@yield('content')
+<div class="container" style="min-height: 500px;">
+    @yield('content')
+</div>
 <div id="footer" class="center-block">
     <p>&copy;2016&nbsp;
     <span><a href="#">联系我们</a></span>
