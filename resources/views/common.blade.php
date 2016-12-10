@@ -18,10 +18,10 @@
         </div>
         <div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="{{ URL('lan') }}">编程语言</a></li>
-                <li><a href="#">读书笔记</a></li>
-                <li><a href="#">我的百科</a></li>
-                <li><a href="#">实践应用</a></li>
+                <li class="active"><a href="{{ URL('main'.'\lan') }}">编程语言</a></li>
+                <li><a href="{{ URL('main'.'\read') }}">读书笔记</a></li>
+                <li><a href="{{ URL('main'.'\know') }}">我的百科</a></li>
+                <li><a href="{{ URL('main'.'\use') }}">实践应用</a></li>
             </ul>
         </div>
     </div>
