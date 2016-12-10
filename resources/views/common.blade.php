@@ -11,13 +11,13 @@
     <script type="text/javascript" src="{{ URL::asset('js/common.js') }}"></script>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navList">
+    <div class="container-fluid" >
         <div class="navbar-header">
-            <a class="navbar-brand" href="{{ URL('lan') }}">首页</a>
+            <a class="navbar-brand" href="{{ URL('main') }}">首页</a>
         </div>
         <div>
-            <ul class="nav navbar-nav" id="navList">
+            <ul class="nav navbar-nav">
                 <li class="active"><a href="{{ URL('lan') }}">编程语言</a></li>
                 <li><a href="#">读书笔记</a></li>
                 <li><a href="#">我的百科</a></li>
@@ -26,7 +26,7 @@
         </div>
     </div>
 </nav>
-<div class="container" style="min-height: 500px;">
+<div id="content">
     @yield('content')
 </div>
 <div id="footer" class="center-block">
