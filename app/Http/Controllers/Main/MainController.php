@@ -42,6 +42,8 @@ class MainController extends Controller
                 default:
                     return "";
             }
+        }else{
+            return "error";
         }
 //        $people = People::find($id);
 //        return view('main.detail',compact('people'));
