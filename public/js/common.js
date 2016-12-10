@@ -1,5 +1,6 @@
 $(function(){
     $("#lanList li a").click(function(){
-        $("#nowTab").text($(this).text());
+        var caret = "<b class=\"caret\"></b>";
+        $("#lanNav ul li a:first").html($(this).text()+caret);
     });
 });
