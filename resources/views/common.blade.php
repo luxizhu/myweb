@@ -17,7 +17,7 @@
             <a class="navbar-brand" href="{{ URL('lan') }}">首页</a>
         </div>
         <div>
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav" id="navList">
                 <li class="active"><a href="{{ URL('lan') }}">编程语言</a></li>
                 <li><a href="#">读书笔记</a></li>
                 <li><a href="#">我的百科</a></li>
