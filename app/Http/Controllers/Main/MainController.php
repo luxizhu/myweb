@@ -41,7 +41,6 @@ class MainController extends Controller
                     return redirect()->action("MyUse\MyUseController@index");
                 default:
                     return "";
-
             }
         }
 //        $people = People::find($id);
