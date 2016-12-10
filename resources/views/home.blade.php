@@ -5,7 +5,7 @@
 </head>
 <body>
 <h3 class="text-center">
-    <a href="{{ URL('people') }}">Welcome!</a>
+    <a href="{{ URL('main') }}">Welcome!</a>
 </h3>
 </body>
 </html>
