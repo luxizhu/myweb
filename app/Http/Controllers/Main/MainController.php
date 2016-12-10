@@ -29,8 +29,23 @@ class MainController extends Controller
     }
 
     public function show($id){
-        $people = People::find($id);
-        return view('main.detail',compact('people'));
+        if(!is_null($id)){
+            switch($id) {
+                case "lan":
+                    return  redirect()->action("Lan\LanController@index");
+                case "read":
+                    return redirect()->action("Read\ReadController@index");
+                case "know":
+                    return redirect()->action("Know\KnowController@index");
+                case "use":
+                    return redirect()->action("Use\UseController@index");
+                default:
+                    return "";
+
+            }
+        }
+//        $people = People::find($id);
+//        return view('main.detail',compact('people'));
     }
     public function edit($id){
         echo 'edit';
