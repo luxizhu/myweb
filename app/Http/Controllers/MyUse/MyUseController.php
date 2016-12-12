@@ -10,7 +10,7 @@ use App\Http\Controllers\Controller;
 class MyUseController extends Controller
 {
     public function index(){
-        return view('lan.lanIndex');
+        return view('lan.lanCommon');
     }
 
     public function create(){
