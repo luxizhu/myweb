@@ -10,7 +10,7 @@ use App\Http\Controllers\Controller;
 class KnowController extends Controller
 {
     public function index(){
-        return view('lan.lanCommon');
+        return view('commPage.lanCommon');
     }
 
     public function create(){
