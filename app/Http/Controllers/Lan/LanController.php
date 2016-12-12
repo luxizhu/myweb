@@ -10,7 +10,7 @@ use App\Http\Controllers\Controller;
 class LanController extends Controller
 {
     public function index(){
-        return view('lan.lanIndex');
+        return view('commPage.lanCommon');
     }
 
     public function create(){
@@ -24,8 +24,16 @@ class LanController extends Controller
     public function show($id){
         if(!is_null($id)){
             switch($id){
-                case "varLearn":
-                    return view("lan.varLearn");
+                case "php":
+                    return view("lan.lanIndex")->with('course','php');
+                case "java":
+                    return view("lan.lanIndex")->with('course','java');
+                case "python":
+                    return view("lan.lanIndex")->with('course','python');
+                case "html":
+                    return view("lan.lanIndex")->with('course','html');
+                case "js":
+                    return view("lan.lanIndex")->with('course','js');
                 default:
                     return $id;
             }
