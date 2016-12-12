@@ -1,6 +1,6 @@
 @extends('commPage\lanCommon')
 @section('lan')
-    <div class="pull-left text-success btn btn-primary">
+    <div class="pull-left text-success b tn btn-primary">
         <span>{{ $course }}</span>
     </div>
     @if($course=='php')
