@@ -18,6 +18,8 @@ Route::get('/', function () {
 Route::resource('main','Main\MainController');
 
 Route::resource('lan','Lan\LanController');
+Route::resource('php','Lan\PHPController');
+Route::resource('java','Lan\JAVAController');
 Route::resource('know','Know\KnowController');
 Route::resource('read','Read\ReadController');
 Route::resource('myUse','MyUse\MyUseController');
