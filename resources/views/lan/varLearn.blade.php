@@ -20,5 +20,43 @@
         $x inside function is 0;
         $x outside of function is 4;
     </pre>
+    <i><strong>函数参数</strong></i>
+    <pre>
+        function x10 ($value){
+            $value = $value*10;
+            return $value;
+        }
+    </pre>
+    <i><strong>全局变量</strong></i>
+    可以在程序任何地方访问；为了修改一个全局变量，必须在要修改该变量的函数中将其显式的声明为全局变量。
+    <pre>
+        $somevar = 15;
+        function addit(){
+            global $somevar;
+            $somevar++;
+            //$GLOBALS["somevar"]++;
+            echo "Somevar is $somevar";
+        }
+        addit();
+    </pre>
+    <i><strong>静态变量</strong><small>static</small></i>
+    <pre>
+        function keep_track(){
+            static $count = 0;
+            $count++;
+            echo $count;
+            echo "&lt;br/&gt;";
+        }
+
+        keep_track();
+        keep_track();
+        keep_track();
+    </pre>
+    输出结果
+    <pre>
+        1
+        2
+        3
+    </pre>
 
 @endsection
