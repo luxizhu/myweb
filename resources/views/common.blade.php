@@ -18,10 +18,10 @@
         </div>
         <div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="{{ URL('main'.'\lan') }}">编程语言</a></li>
-                <li><a href="{{ URL('main'.'\read') }}">读书笔记</a></li>
-                <li><a href="{{ URL('main'.'\know') }}">我的百科</a></li>
-                <li><a href="{{ URL('main'.'\use') }}">实践应用</a></li>
+                <li @if(isset($func)&&$func=="lan")class="active"@endif><a href="{{ URL('main'.'\lan') }}">编程语言</a></li>
+                <li @if(isset($func)&&$func=="read")class="active"@endif><a href="{{ URL('main'.'\read') }}">读书笔记</a></li>
+                <li @if(isset($func)&&$func=="know")class="active"@endif><a href="{{ URL('main'.'\know') }}">我的百科</a></li>
+                <li @if(isset($func)&&$func=="use")class="active"@endif><a href="{{ URL('main'.'\use') }}">实践应用</a></li>
             </ul>
         </div>
     </div>

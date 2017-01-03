@@ -10,7 +10,8 @@ use App\Http\Controllers\Controller;
 class MyUseController extends Controller
 {
     public function index(){
-        return view('commPage.lanCommon');
+        $func="use";
+        return view('commPage.lanCommon',compact("func"));
     }
 
     public function create(){

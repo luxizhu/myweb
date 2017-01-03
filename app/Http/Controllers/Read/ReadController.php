@@ -10,7 +10,8 @@ use App\Http\Controllers\Controller;
 class ReadController extends Controller
 {
     public function index(){
-        return view('commPage.lanCommon');
+        $func = "read";
+        return view('commPage.lanCommon',compact("func"));
     }
 
     public function create(){

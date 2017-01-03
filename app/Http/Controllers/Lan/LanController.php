@@ -10,7 +10,8 @@ use App\Http\Controllers\Controller;
 class LanController extends Controller
 {
     public function index(){
-        return view('commPage.lanCommon');
+        $func="lan";
+        return view('commPage.lanCommon',compact("func"));
     }
 
     public function create(){
