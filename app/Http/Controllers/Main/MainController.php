@@ -25,7 +25,7 @@ class MainController extends Controller
     }
 
     public function store(Request $request){
-        echo 'store';
+        return view('main.main');
     }
 
     public function show($id){
@@ -39,6 +39,8 @@ class MainController extends Controller
                     return redirect()->action("Know\KnowController@index");
                 case "use":
                     return redirect()->action("MyUse\MyUseController@index");
+                case "script":
+                    return view('main.javascript');
                 default:
                     return "";
             }
